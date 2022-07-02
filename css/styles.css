@@ -1,5 +1,8 @@
 
 :root{
+
+    /* colors */
+
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
@@ -8,11 +11,20 @@
     --main-background: #E5E5E5;
     --contrast-background: #2F303A;
     --hover-btn: #0b7ad1;
+    --boot-send-color: rgba(255, 255, 255, 0.6);
+
+    /* fonts */
+
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+
 }
 
 body {
     background-color: var(--main-background);
     color: var(--primary-text-color);
+
+    font-family: var(--main-font);
 }
 
 /* reset styles */
@@ -28,12 +40,43 @@ ul {
 
 }
 
+.lst {
 
+}
+
+
+/* main */
+
+.section-title {
+color: var(--title-text-color);
+
+font-size: 36px;
+line-height: calc(42 / 36);
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+
+/* header */
+
+.hat {
+background-color: var(--contrast-text-color);
+
+}
 
 /* logo site */
 
 .accent {
     color: var(--accent-color);
+}
+
+.logo {
+
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
 }
 
 .logo-dark{
@@ -48,6 +91,11 @@ ul {
 
 .nav-link {
     color: var(--title-text-color); 
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
 }
 
 .login-link {
@@ -70,6 +118,14 @@ background-color: var(--contrast-background);
 
 .hero-title {
     color: var(--contrast-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
 }
 
 .hero-btn {
@@ -94,7 +150,44 @@ color: var(--title-text-color);
 
 /* Team */
 
+.team-name {
+color: var(--title-text-color);
+
+}
+
+.team-post {
 
 
 
+}
+
+/* footer */
+
+.boot {
+    background-color: var(--contrast-background);
+}
+
+.boot-address{
+color: var(--contrast-text-color);
+
+}
+
+.boot-send {
+    color: var(--boot-send-color);
+
+}
+
+.boot-active:hover,
+.boot-active:focus{
+    color: var(--accent-color);
+
+}
+
+
+
+/*  */
 /* Portfolio */
+/*  */
+
+
+
