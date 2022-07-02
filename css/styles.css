@@ -1,0 +1,100 @@
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --logo-text-color: #000000;
+    --contrast-text-color: #ffffff;
+    --main-background: #E5E5E5;
+    --contrast-background: #2F303A;
+    --hover-btn: #0b7ad1;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--primary-text-color);
+}
+
+/* reset styles */
+a {
+    text-decoration:none    
+}
+
+ul {
+    list-style-type:none;
+}
+
+.lnk {
+
+}
+
+
+
+/* logo site */
+
+.accent {
+    color: var(--accent-color);
+}
+
+.logo-dark{
+    color: var(--logo-text-color);
+}
+
+.logo-white{
+    color: var(--contrast-text-color);
+}
+
+/* Nav site */
+
+.nav-link {
+    color: var(--title-text-color); 
+}
+
+.login-link {
+    color: var(--primary-text-color);
+}
+
+.login-link:hover,
+.login-link:focus,
+.nav-link:hover,
+.nav-link:focus,
+.active-nav {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero{
+background-color: var(--contrast-background);
+}
+
+.hero-title {
+    color: var(--contrast-text-color);
+}
+
+.hero-btn {
+    color: var(--contrast-text-color);
+    background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+background-color: var(--hover-btn);
+}
+
+/* Advantage */
+
+.advantage-title {
+color: var(--title-text-color);
+
+}
+
+/* Our work */
+
+
+/* Team */
+
+
+
+
+/* Portfolio */
