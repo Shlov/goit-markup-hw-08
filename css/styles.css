@@ -16,7 +16,6 @@
 }
 
 body {
-    background-color: var(--main-background);
     color: var(--primary-text-color);
 
     font-family: var(--main-font);
@@ -37,6 +36,7 @@ ul {
 
 .lnk {
     text-decoration:none;
+    color: currentColor;
 }
 
 .lst {
@@ -62,17 +62,20 @@ letter-spacing: 0.03em;
 
 /* header */
 
-.hat {
-background-color: var(--contrast-text-color);
+.header { 
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
 }
 
 /* logo site */
 
-.accent {
+/* .accent {
     color: var(--accent-color);
-}
+} */
 
 .logo {
+    color: var(--accent-color);
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
@@ -93,14 +96,14 @@ background-color: var(--contrast-text-color);
 .nav-link {
     color: var(--title-text-color); 
 
-    font-weight: 500;
+    /* font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; */
 }
 
 .login-link {
-    color: var(--primary-text-color);
+
 }
 
 /* Hero */
@@ -122,8 +125,13 @@ background-color: var(--contrast-background);
 
 .hero-btn {
     color: var(--contrast-text-color);
+    font-family: inherit;
     background-color: var(--accent-color);
     cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
 }
 
 .hero-btn:hover,
@@ -138,7 +146,6 @@ color: var(--title-text-color);
 
 font-size: 14px;
 line-height: calc(16 / 14);
-letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 
@@ -146,35 +153,36 @@ text-transform: uppercase;
 
 /* Team */
 
+.team-post,
 .team-name {
-color: var(--title-text-color);
-
-font-weight: 500;
-font-size: 16px;
-line-height: calc(19 / 16);
-text-align: center;
-letter-spacing: 0.03em;
-}
-
-.team-post {
     font-size: 16px;
     line-height: calc(19 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;   
+    text-align: center;  
 }
+
+.team-name {
+    color: var(--title-text-color);
+    
+    font-weight: 500;
+    }
 
 /* footer */
 
-.boot {
+.footer {
     background-color: var(--contrast-background);
 }
 
-.boot-address{
+.footer-contact {
+    font-style: inherit;
+    color: var(--boot-send-color);
+}
+
+.footer-address{
 color: var(--contrast-text-color);
 }
 
-.boot-send {
-    color: var(--boot-send-color);
+.footer-send {
+
 }
 
 /*  */
@@ -183,6 +191,7 @@ color: var(--contrast-text-color);
 
 .portfolio-btn {
     color: var(--title-text-color);
+    font-family: inherit;
 
     font-weight: 500;
     font-size: 16px;
@@ -210,6 +219,5 @@ letter-spacing: 0.06em;
 .portfolio-txt {
     font-size: 16px;
     line-height: calc(30 / 16);
-    letter-spacing: 0.03em;
 }
 
