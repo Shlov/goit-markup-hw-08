@@ -25,23 +25,30 @@ body {
 }
 
 /* reset styles */
-/* 
+
 a {
-    text-decoration:none    
+    text-decoration:none;    
+    color: currentColor;
 }
 ul {
     list-style-type:none;
-} */
-/* ^^^^^^^^^^^^^^^^^^^^^^^ Корректно ли скинуть стили таким образом? Если нет, то почему?*/
+    outline: 2px solid hotpink;
+    padding: 0;
+    margin: 0;
+}
 
-.lnk {
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+/* .lnk {
     text-decoration:none;
     color: currentColor;
 }
 
 .lst {
     list-style-type:none;
-}
+} */
 
 /* main */
 
@@ -58,6 +65,17 @@ letter-spacing: 0.03em;
 .active-link:focus,
 .nav-link.active-nav {
     color: var(--accent-color);
+}
+
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+outline: 2px solid red;
+align-items: center;
 }
 
 /* header */
@@ -81,6 +99,7 @@ letter-spacing: 0.03em;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+    margin-right: 93px;
 }
 
 .logo-dark{
@@ -93,13 +112,25 @@ letter-spacing: 0.03em;
 
 /* Nav site */
 
+.site-nav {
+    display: flex;
+    djhkhkhkhkhkjhkjh
+    gap: 50px;
+}
+
 .nav-link {
     color: var(--title-text-color); 
+    padding: 30px 0;
 
     /* font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em; */
+}
+
+.login-nav {
+display: flex;
+
 }
 
 .login-link {
