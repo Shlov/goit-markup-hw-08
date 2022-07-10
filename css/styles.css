@@ -181,9 +181,26 @@ h1,h2,h3,h4,h5,h6,p {
 
 .hero{
     background-color: var(--contrast-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+   
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .hero-title {
+    max-width: 650px;
+    margin-bottom: 30px;
+    /* margin-left: auto;
+    margin-right: auto; */
+
     color: var(--contrast-text-color);
 
     font-weight: 900;
