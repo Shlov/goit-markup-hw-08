@@ -445,7 +445,7 @@ padding-top: 0;
     --column-list: 3;
     flex-basis: calc((100% - var(--gap-list) * (var(--column-list) - 1)) / var(--column-list));
     /* border-bottom: 1px solid var(--border-white-cl); */
-    outline: 2px solid blueviolet;
+    /* outline: 2px solid blueviolet; */
 
 }
 
