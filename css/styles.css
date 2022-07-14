@@ -288,7 +288,7 @@ padding-top: 0;
     background-color: var(--section-background);
 }
 
-.team .card-item {
+.team .card-item.card-team {
     border-left: 1px solid rgb(117, 117, 117, 0.4);
     border-right: 1px solid rgb(117, 117, 117, 0.4);
     border-bottom: 1px solid rgb(117, 117, 117, 0.4);
@@ -314,13 +314,75 @@ padding-top: 0;
     
 }
 
-
+.team-post {
+    margin-bottom: 16px;
+}
 
 .team-blok {
+    min-width: 270px;
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
+
+.team-socials {
+    --gap-list: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: 206px;
+
+}
+
+.socials-item {
+    display: flex;
+    max-width: 44px;
+    max-height: 44px;
+    
+}
+
+
+
+.socials-link {
+   
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 22px;
+
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+    
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    color: var(--contrast-text-color);
+    /* fill: var(--contrast-text-color); */
+
+}
+
+.socials-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-position: 50% 50%;
+    fill: red;
+}
+
+.socials-icon:hover,
+.socials-icon:focus {
+    fill: var(--contrast-text-color);
+}
+
+
+
+
 
 /* Clients */
 
@@ -425,11 +487,6 @@ padding-top: 0;
     --gap-list: 8px;
     margin-bottom: 50px;
     justify-content: center;
-
-}
-
-.portfolio .card-set {  
-    gap: var(--gap-list);
 
 }
 
