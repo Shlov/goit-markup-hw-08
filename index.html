@@ -1,127 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container header-container">
-            <a href="./index.html" lang="en" class="logo lnk">Web<span class="logo-dark">Studio</span></a>
-            <nav>                
-                <ul class="site-nav lst">
-                    <li> <a class="nav-link active-nav lnk" href="./index.html">Студия</a></li>
-                    <li> <a class="nav-link active-link lnk" href="./portfolio.html">Портфолио</a></li>
-                    <li> <a class="nav-link active-link lnk" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="login-nav lst">
-                <li><a class="login-link active-link lnk" href="mailto:info@example.com">info@devstudio.com</a></li>
-                <li><a class="login-link active-link lnk" href="tel:+380991111111">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
+      <div class="container header-container">
+        <a href="./index.html" lang="en" class="logo lnk"
+          >Web<span class="logo-dark">Studio</span></a
+        >
+        <nav>
+          <ul class="site-nav lst">
+            <li><a class="nav-link active-nav lnk" href="./index.html">Студия</a></li>
+            <li><a class="nav-link active-link lnk" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav-link active-link lnk" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="login-nav lst">
+          <li>
+            <a class="login-link active-link lnk" href="mailto:info@example.com">
+              <svg class="login-icon">
+                <use href="./image/icons.svg#email" width="16"></use>
+              </svg>info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="login-link active-link lnk" href="tel:+380991111111">
+              <svg class="login-icon">
+                <use href="./image/icons.svg#smartphone" width="10"></use>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
-            </div>
-        </section> 
-         <!-- Advantage -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title visually-hidden">Особенности</h2>
-                <ul class="card-set lst">
-                    <li class="card-item">
-                        <h3 class="advantage-title">Внимание к деталям</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="card-item">
-                        <h3 class="advantage-title">Пунктуальность</h3>
-                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="card-item">
-                        <h3 class="advantage-title">Планирование</h3>
-                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li class="card-item">
-                        <h3 class="advantage-title">Современные технологии</h3>
-                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Our work -->
-        <section class="section work">
-            <div class="container">
-                <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="card-set work-list lst">
-                    <li class="card-item"><img class="img" src="./image/box-1.jpg" alt="верстка" width="370"></li>
-                    <li class="card-item"><img class="img" src="./image/box-2.jpg" alt="моб приложения" width="370"></li>
-                    <li class="card-item"><img class="img" src="./image/box-3.jpg" alt="дизайн" width="370"></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team -->
-        <section class="section team">
-            <div class="container">
-                <h2 class="section-title">Наша команда</h2>
-                <ul class="card-set lst">
-                    <li class="card-item">
-                        <img class="img" src="./image/img-igor.jpg" alt="Фото Игорь Демьяненко" width="270"> 
-                        <div class="team-blok">
-                            <h3 class="team-name">Игорь Демьяненко</h3>
-                            <p class="team-post" lang="en">Product Designer</p>
-                        </div>
-                    </li>
-                    <li class="card-item">
-                        <img class="img" src="./image/img-olga.jpg" alt="Фото Ольга Репина" width="270"> 
-                        <div class="team-blok">
-                            <h3 class="team-name">Ольга Репина</h3>
-                            <p class="team-post" lang="en">Frontend Developer</p></div>
-                    </li>
-                    <li class="card-item">
-                        <img class="img" src="./image/img-nikola.jpg" alt="Фото Николай Тарасов" width="270"> 
-                        <div class="team-blok">
-                            <h3 class="team-name">Николай Тарасов</h3>
-                            <p class="team-post" lang="en">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="card-item">
-                        <img class="img" src="./image/img-mihal.jpg" alt="Фото Михаил Ермаков" width="270"> 
-                        <div class="team-blok">
-                            <h3 class="team-name">Михаил Ермаков</h3>
-                            <p class="team-post" lang="en">UI Designer</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <div class="container footer-container">
-            <a href="./index.html" lang="en" class="logo lnk">Web<span class="logo-white">Studio</span></a>
-            <address class="footer-contact">
-                <ul class="footer-list lst">
-                    <li><a class="footer-address active-link lnk" href="https://goo.gl/maps/RzdjJZeYTzvDzjDYA" target="_blank" rel="noopener noreferrere">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a class="active-link lnk" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="active-link lnk" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>         
-            </address>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
-    </footer>
+      </section>
+      <!-- Advantage -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Особенности</h2>
+          <ul class="card-set lst">
+            <li class="card-item">
+              <svg class="advantage-icon">
+                <use href="./image/icons.svg#antenna" width="70"></use>
+              </svg>
+              <h3 class="advantage-title">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="card-item">
+              <svg class="advantage-icon">
+                <use href="./image/icons.svg#clock" width="70"></use>
+              </svg>
+              <h3 class="advantage-title">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="card-item">
+              <svg class="advantage-icon">
+                <use href="./image/icons.svg#vector" width="70"></use>
+              </svg>
+              <h3 class="advantage-title">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="card-item">
+              <svg class="advantage-icon">
+                <use href="./image/icons.svg#astronaut" width="70"></use>
+              </svg>
+              <h3 class="advantage-title">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Our work -->
+      <section class="section work">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="card-set work-list lst">
+            <li class="card-item">
+              <img class="img" src="./image/box-1.jpg" alt="верстка" width="370" />
+            </li>
+            <li class="card-item">
+              <img class="img" src="./image/box-2.jpg" alt="моб приложения" width="370" />
+            </li>
+            <li class="card-item">
+              <img class="img" src="./image/box-3.jpg" alt="дизайн" width="370" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Team -->
+      <section class="section team">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="card-set lst">
+            <li class="card-item">
+              <img class="img" src="./image/img-igor.jpg" alt="Фото Игорь Демьяненко" width="270" />
+              <div class="team-blok">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-post" lang="en">Product Designer</p>
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/">
+                      <svg>
+                        <use href="./image/icons.svg#instagram" width="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <svg>
+                        <use href="./image/icons.svg#twitter" width="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/">
+                      <svg>
+                        <use href="./image/icons.svg#facebook" width="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/">
+                      <svg>
+                        <use href="./image/icons.svg#linkedin" width="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-item">
+              <img class="img" src="./image/img-olga.jpg" alt="Фото Ольга Репина" width="270" />
+              <div class="team-blok">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-post" lang="en">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img
+                class="img"
+                src="./image/img-nikola.jpg"
+                alt="Фото Николай Тарасов"
+                width="270"
+              />
+              <div class="team-blok">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-post" lang="en">Marketing</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img class="img" src="./image/img-mihal.jpg" alt="Фото Михаил Ермаков" width="270" />
+              <div class="team-blok">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-post" lang="en">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients -->
+      section.section>div.container>h2.section-title+ul>li*6
+      <section class="section clients">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="card-set lst">
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-1" width="106"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-2" width="106"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-3" width="106"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-4" width="106"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-5" width="106"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="" class="clients-link lnk">
+                <svg class="clients-icon">
+                  <use href="./image/icons.svg#group-6" width="106"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="./index.html" lang="en" class="logo lnk"
+          >Web<span class="logo-white">Studio</span></a
+        >
+        <address class="footer-contact">
+          <ul class="footer-list lst">
+            <li>
+              <a class="footer-address active-link lnk"
+                href="https://goo.gl/maps/RzdjJZeYTzvDzjDYA"
+                target="_blank"
+                rel="noopener noreferrere"
+                >г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li><a class="active-link lnk" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="active-link lnk" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>
