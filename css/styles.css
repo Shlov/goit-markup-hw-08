@@ -33,7 +33,6 @@ body {
 /* reset styles */
 
 ul {
-    /* outline: 2px solid hotpink; */
     padding: 0;
     margin: 0;
 }
@@ -180,11 +179,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: block;
     padding-top: 32px;
     padding-bottom: 31px;
-    /* background-color: aqua; */
-    /* font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em; */
+
 }
 
 .login-link {
@@ -213,7 +208,6 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: var(--contrast-background);
     background-image: url("../image/fon.jpg"), 
     linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
-    
     background-repeat: no-repeat;
     background-position: 50%;
     max-width: 1600px;
@@ -234,8 +228,6 @@ h1,h2,h3,h4,h5,h6,p {
 .hero-title {
     max-width: 650px;
     margin-bottom: 30px;
-    /* margin-left: auto;
-    margin-right: auto; */
 
     color: var(--contrast-text-color);
 
@@ -315,7 +307,6 @@ padding-top: 0;
 
 .team-post,
 .team-name {
-
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;  
@@ -346,8 +337,7 @@ padding-top: 0;
     
 }
 
-.socials-link {
-   
+.socials-link {  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,7 +355,6 @@ padding-top: 0;
     
 }
 
-
 .socials-icon {
     display: block;
     width: 20px;
@@ -379,10 +368,6 @@ padding-top: 0;
     fill: var(--contrast-text-color);
 }
 
-
-
-
-
 /* Clients */
 
 .clients .card-item {
@@ -390,9 +375,7 @@ padding-top: 0;
     display: flex;
     max-width: 170px;
     max-height: 92px;
-    /* padding: 16px 32px;
-    border: 1px solid var(--clients-icon-cl);
-    border-radius: 4px; */
+
 }
 
 .clients-link {
@@ -414,7 +397,6 @@ padding-top: 0;
     width: 106px;
     height: 60px;
 }
-
 
 /* footer */
 
@@ -459,8 +441,7 @@ padding-top: 0;
     gap: 9px;
 }
 
-.socials-title {
-    
+.socials-title {    
     font-weight: 700;
     text-transform: uppercase;
     color: var(--contrast-text-color);
@@ -478,10 +459,8 @@ padding-top: 0;
 .socials-link:hover,
 .socials-link:focus {
     background-color: var(--accent-color);
-    
-    
-}
 
+}
 
 /*  */
 /*  */
@@ -504,7 +483,6 @@ padding-top: 0;
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-
 
 .portfolio-btn-active,
 .portfolio-btn:hover,
@@ -551,4 +529,6 @@ padding-top: 0;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
+
 
