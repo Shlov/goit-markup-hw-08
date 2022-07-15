@@ -12,6 +12,7 @@
     --boot-send-color: rgba(255, 255, 255, 0.6);
     --border-white-cl: #eeeeee;
     --section-background: #F5F4FA;
+    --clients-icon-cl: #AFB1B8;
     /* fonts */
     --main-font: 'Roboto', sans-serif;
     --logo-font: 'Raleway', sans-serif;
@@ -112,6 +113,14 @@ h1,h2,h3,h4,h5,h6,p {
     flex-basis: calc((100% - var(--gap-list) * (var(--column-list) - 1)) / var(--column-list));
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
 /* header */
 
 .header { 
@@ -202,8 +211,16 @@ h1,h2,h3,h4,h5,h6,p {
 
 .hero{
     background-color: var(--contrast-background);
+    background-image: url("../image/fon.jpg"), 
+    linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
+    
+    background-repeat: no-repeat;
+    background-position: 50%;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -270,8 +287,6 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 30px;
 }
 
-
-
 /* Our work */
 
 .work.section {
@@ -288,7 +303,7 @@ padding-top: 0;
     background-color: var(--section-background);
 }
 
-.team .card-item.card-team {
+.card-team {
     border-left: 1px solid rgb(117, 117, 117, 0.4);
     border-right: 1px solid rgb(117, 117, 117, 0.4);
     border-bottom: 1px solid rgb(117, 117, 117, 0.4);
@@ -319,17 +334,8 @@ padding-top: 0;
 }
 
 .team-blok {
-    min-width: 270px;
     padding-top: 30px;
     padding-bottom: 30px;
-
-}
-
-.team-socials {
-    --gap-list: 10px;
-    margin-left: 32px;
-    margin-right: 32px;
-    max-width: 206px;
 
 }
 
@@ -340,39 +346,32 @@ padding-top: 0;
     
 }
 
-
-
 .socials-link {
    
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 22px;
+    color:var(--primary-text-color)
 
 }
 
 .socials-link:hover,
 .socials-link:focus {
     background-color: var(--accent-color);
+    color: var(--contrast-text-color);
     
 }
 
-.socials-link:hover,
-.socials-link:focus {
-    color: var(--contrast-text-color);
-    /* fill: var(--contrast-text-color); */
-
-}
 
 .socials-icon {
     display: block;
     width: 20px;
     height: 20px;
     object-position: 50% 50%;
-    fill: red;
+    fill: currentColor;
 }
 
 .socials-icon:hover,
@@ -391,14 +390,27 @@ padding-top: 0;
     display: flex;
     max-width: 170px;
     max-height: 92px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    /* padding: 16px 32px;
+    border: 1px solid var(--clients-icon-cl);
+    border-radius: 4px; */
 }
 
-.lients-icon {
-    fill: #afb1b8;
-    /* content: ""; */
+.clients-link {
+    color: var(--clients-icon-cl);
+    padding: 16px 32px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+}
+
+
+.clients-icon {
+    fill: currentColor;
     width: 106px;
     height: 60px;
 }
@@ -408,8 +420,16 @@ padding-top: 0;
 
 .footer {
     background-color: var(--contrast-background);
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+
 }
 
 .footer-contact {
@@ -422,13 +442,14 @@ padding-top: 0;
 }
 
 .footer .logo {
-
+    display: block;
     margin-bottom: 20px;
 }
 
-.footer-container{
+.footer .contact-container{
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 70px;
     
 }
 
@@ -436,6 +457,29 @@ padding-top: 0;
     display: flex;
     flex-direction: column;
     gap: 9px;
+}
+
+.socials-title {
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--contrast-text-color);
+    margin-bottom: 20px;
+
+}
+
+.footer .socials-link {
+   
+    color: var(--contrast-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+    
+    
 }
 
 
@@ -499,6 +543,12 @@ padding-top: 0;
 
 .portfolio-list {
     --column-list: 3;
+
+}
+
+.portfolio .card-item:hover,
+.portfolio .card-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 
