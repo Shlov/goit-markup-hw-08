@@ -28,9 +28,9 @@
         >
         <nav>
           <ul class="site-nav lst">
-            <li><a class="nav-link active-nav lnk" href="./index.html">Студия</a></li>
-            <li><a class="nav-link active-link lnk" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="nav-link active-link lnk" href="">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link active-nav lnk" href="./index.html">Студия</a></li>
+            <li class="nav-item"><a class="nav-link active-link lnk" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link active-link lnk" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="login-nav lst">
@@ -117,12 +117,21 @@
           <ul class="card-set work-list lst">
             <li class="card-item">
               <img class="img" src="./image/box-1.jpg" alt="верстка" width="370" />
+              <div class="work-title">
+                <h3 class="advantage-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="card-item">
               <img class="img" src="./image/box-2.jpg" alt="моб приложения" width="370" />
+              <div class="work-title">
+                <h3 class="advantage-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="card-item">
               <img class="img" src="./image/box-3.jpg" alt="дизайн" width="370" />
+              <div class="work-title">
+                <h3 class="advantage-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -389,5 +398,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->    
+    <div class="bg-modal">
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg width="11" height="11">
+            <use href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
