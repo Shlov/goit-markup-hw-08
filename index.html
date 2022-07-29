@@ -419,27 +419,37 @@
             <use href="./image/icons.svg#close"></use>
           </svg>
         </button>
-        <strong>Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal-strong">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form" action="">
-          <label for="">
-            Ім'я
-            <input type="name">
-          </label>
-          <label for="">
-            Телефон
-            <input type="tel">
-          </label>
-          <label for="">
-            Пошта
-            <input type="email">
-          </label>
-          <label for="">
-            Коментар
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </label>
-          <label for="">
-            Коментар
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+          <div class="register-form">
+            <label class="label-form" for="">
+              Ім'я
+              <input class="input-register-form" type="name">
+              <svg class="icon-register-form" width="18" height="18">
+                <use href="./image/icons.svg#person-black"></use>
+              </svg>
+            </label>
+            <label class="label-form" for="">
+              Телефон
+              <input class="input-register-form" type="tel">
+              <svg class="icon-register-form" width="18" height="18">
+                <use href="./image/icons.svg#phone-black"></use>
+              </svg>
+            </label>
+            <label class="label-form" for="">
+              Пошта
+              <input class="input-register-form" type="email">
+              <svg class="icon-register-form" width="18" height="18">
+                <use href="./image/icons.svg#email-black"></use>
+              </svg>
+            </label>
+            <label class="label-form" for="">
+              Коментар
+              <textarea class="textarea-register-form" placeholder="Введіть текст" name="" id="" cols="30" rows="5"></textarea>
+            </label>
+          </div>
+          <label  class="politics-form" for="">
+            <input type="checkbox">
             <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
           </label>
           <button class="hero-btn" type="submit">Відправити</button>
