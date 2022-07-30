@@ -400,7 +400,7 @@
           <strong class="socials-title">Підпишіться на розсилку</strong>
           <form class="footer-send" action="">
             <label class="footer-label" for="">
-              <input class="footer-input" type="email">
+              <input class="footer-input" type="email" placeholder="my@mail.ua" name="back-mail">
               <span class="footer-label-txt">E-mail</span>
             </label>
             <button class="hero-btn send-btn" type="submit">Підписатися
@@ -424,34 +424,38 @@
         <form class="modal-form" action="">
           <div class="register-form">
             <label class="label-form" for="">
-              Ім'я
-              <input class="input-register-form" type="name">
+              <span class="form-txt">Ім'я</span>
+              <input class="input-register-form" type="name" name="user-name">
               <svg class="icon-register-form" width="18" height="18">
                 <use href="./image/icons.svg#person-black"></use>
               </svg>
             </label>
             <label class="label-form" for="">
-              Телефон
-              <input class="input-register-form" type="tel">
+              <span class="form-txt">Телефон</span>
+              <input class="input-register-form" type="tel" name="user-tel">
               <svg class="icon-register-form" width="18" height="18">
                 <use href="./image/icons.svg#phone-black"></use>
               </svg>
             </label>
             <label class="label-form" for="">
-              Пошта
-              <input class="input-register-form" type="email">
+              <span class="form-txt">Пошта</span>
+              <input class="input-register-form" type="email" name="user-mail">
               <svg class="icon-register-form" width="18" height="18">
                 <use href="./image/icons.svg#email-black"></use>
               </svg>
             </label>
             <label class="label-form" for="">
-              Коментар
-              <textarea class="textarea-register-form" placeholder="Введіть текст" name="" id="" cols="30" rows="5"></textarea>
+              <span class="form-txt">Коментар</span>
+              <textarea class="textarea-register-form" placeholder="Введіть текст" name="" id="" cols="30" rows="5" name="user-coment"></textarea>
             </label>
           </div>
-          <label  class="politics-form" for="">
-            <input type="checkbox">
-            <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
+          <label  class="politics-form" for="modal-check">
+            <input class="input-politics-form visually-hidden" type="checkbox" id="modal-check"  name="user-check">
+            <span class="politics-form-txt">Погоджуюся з розсилкою та приймаю <a class="politics-link" href="">Умови договору</a></span>
+            <svg class="icon-check-form" width="18" height="18">
+              <use class="politics-form-check" href="./image/icons.svg#check"></use>
+              <use class="politics-form-uncheck" href="./image/icons.svg#no-check"></use>
+            </svg>
           </label>
           <button class="hero-btn" type="submit">Відправити</button>
         </form>

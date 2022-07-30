@@ -548,12 +548,41 @@ padding-top: 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    color: var(--contrast-text-color);
+}
+
+.footer-input::placeholder {
+    opacity: 0;
+}
+
+.footer-input:not(:placeholder-shown) + .footer-label-txt {
+    opacity: 0;
+    /* color: red; */
+}   
+
+.footer-input:focus::placeholder {
+    opacity: 1;
+}
+
+.footer-input:focus,
+.footer-input:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .footer-label{
     position: relative;
     /* outline: none; */
 
+}
+
+.footer-input:focus + .footer-label-txt {
+    opacity: 0;
+
+}
+
+.footer-input:hover + .footer-label-txt{
+    color: var(--accent-color);
 }
 
 .footer-label:hover,
@@ -605,7 +634,7 @@ padding-top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 582px;
+    /* height: 582px; */
     padding-left: 40px;
     padding-right: 40px;
     background-color: var(--main-background);
@@ -656,33 +685,118 @@ padding-top: 0;
 .input-register-form {
     padding: 12px 12px 12px 42px;
     width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
  
 
 }
+
+.input-register-form:hover,
+.input-register-form:focus,
+.textarea-register-form:hover,
+.textarea-register-form:focus {
+    border-color: var(--accent-color);
+    outline: none;
+
+}
+
+.input-register-form:hover + .icon-register-form,
+.input-register-form:focus + .icon-register-form {
+    fill: var(--accent-color);
+}
+
+
+
 
 .textarea-register-form {
     padding: 12px 16px;
     width: 100%;
     height: 120px;
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 
 }
+
+
 
 .icon-register-form {
     position: absolute;
     left: 12px;
-    top: 50%;
+    bottom: 14px;
     
 }
 
-.politics-form {
-    display: block;
-    margin-bottom: 30px;
+.form-txt {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
 }
 
-/* .modal-form .hero-btn  {
+.politics-form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    margin-bottom: 30px;
+    margin-left: ;
+}
+
+.icon-check-form {
+    position: absolute;
+    left: 10px;
+    top:0;
+    transition: opacity var(--animat);
+
+}
+
+.politics-form-check {
+    opacity: 0;
+    background:var(--accent-color);
+    transition: opacity var(--animat);
+}
+
+.politics-form-uncheck {
+
+    opacity: 1;
+    transition: opacity var(--animat);
+    
+
+}
+
+.input-politics-form:checked ~ .icon-check-form .politics-form-check {
+    opacity: 1;
+    transition: opacity var(--animat);
+}
+
+.input-politics-form:checked ~ .icon-check-form .politics-form-uncheck {
+    opacity: 0;
+    transition: opacity var(--animat);
+    
+}
+
+.politics-form-txt {
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    user-select: none;
+}
+
+.politics-link {
+    color: var(--accent-color);
+    text-underline-position: under;
+
+}
+
+
+.modal-form .hero-btn  {
+    display: block;
     margin-bottom: 40px;
-} */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .modal-btn-cls {
     position: absolute;
@@ -699,6 +813,10 @@ padding-top: 0;
 
 }
 
+.modal-btn-cls:hover,
+.modal-btn-cls:focus {
+    fill: var(--accent-color);
+}
 
 
 /*  */
