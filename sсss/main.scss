@@ -7,20 +7,25 @@
 // Base
 @import './base/base';
 @import './base/reset';
-// @import './base/';
-// @import './base/';
-// @import './base/';
+
 // Components
-// @import './components/';
-// @import './components/';
-// @import './components/';
-// @import './components/';
+@import './components/container';
+@import './components/section';
+@import './components/section-title';
+@import './components/buttton';
+@import './components/card-set';
+@import './components/card-title';
+@import './components/socials';
+@import './components/logo';
+
 // Layout
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
-// @import './layout/header';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantage';
+@import './layout/our-work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/send-email';
+@import './layout/modal';
+@import './layout/portfolio';

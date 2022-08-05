@@ -8,34 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
 
   <header class="header">
-    <div class="container header-container">
-      <a href="./index.html" lang="en" class="logo lnk"
-        >Web<span class="logo-dark">Studio</span></a
+    <div class="header__container container">
+      <a href="./index.html" lang="en" class="logo header__logo lnk"
+        >Web<span class="logo__text logo__text--dark">Studio</span></a
       >
-      <nav>
-        <ul class="site-nav lst">
-          <li><a class="nav-link active-link lnk" href="./index.html">Студия</a></li>
-          <li><a class="nav-link active-nav lnk" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link active-link lnk" href="">Контакты</a></li>
+      <nav class="site-nav">
+        <ul class="site-nav__list lst">
+          <li><a class="site-nav__link lnk" href="./index.html">Студия</a></li>
+          <li><a class="site-nav__link lnk site-nav__link--operating" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="site-nav__link lnk" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="login-nav lst">
+      <ul class="connection-list header__connection-list lst">
         <li>
-          <a class="login-link active-link lnk" href="mailto:info@example.com">
-            <svg class="login-icon" width="16" height="12">
+          <a class="connection-list__link lnk" href="mailto:info@example.com">
+            <svg class="connection-list__icon" width="16" height="12">
               <use href="./image/icons.svg#email"></use>
             </svg>info@devstudio.com
           </a>
         </li>
         <li>
-          <a class="login-link active-link lnk" href="tel:+380991111111">
-            <svg class="login-icon" width="10" height="16">
+          <a class="connection-list__link lnk" href="tel:+380991111111">
+            <svg class="connection-list__icon" width="10" height="16">
               <use href="./image/icons.svg#smartphone"></use>
             </svg>+38 096 111 11 11
           </a>
@@ -188,13 +189,13 @@
     </main>
     
     <footer class="footer">
-      <div class="container ">
-        <div class="contact-container">
-          <a href="./index.html" lang="en" class="logo lnk">Web<span class="logo-white">Studio</span></a>
-          <address class="footer-contact">
-            <ul class="footer-list lst">
+      <div class="footer__container container">
+        <div>
+          <a href="./index.html" lang="en" class="logo lnk">Web<span class="logo__text logo__text--white">Studio</span></a>
+          <address class="footer__contact">
+            <ul class="footer__list lst">
               <li>
-                <a class="footer-address active-link lnk"
+                <a class="footer__address active-link lnk"
                   href="https://goo.gl/maps/RzdjJZeYTzvDzjDYA"
                   target="_blank"
                   rel="noopener noreferrere"
@@ -206,48 +207,48 @@
             </ul>
           </address>
         </div>        
-        <div class="footer-social">
-          <p class="socials-title">присоединяйтесь</p>
+        <div class="footer__social">
+          <p class="footer__title">присоединяйтесь</p>
           <ul class="socials lst">
-            <li class="card-item socials-item">
-              <a class="socials-link" href="https://www.instagram.com/" aria-label="Посилання Instagram" target="_blank" rel="noopener noreferrere">
-                <svg class="socials-icon" width="20" height="20">
+            <li class="card-item socials__item">
+              <a class="socials__link" href="https://www.instagram.com/" aria-label="Посилання Instagram" target="_blank" rel="noopener noreferrere">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./image/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="card-item socials-item">
-              <a class="socials-link" href="https://twitter.com/" aria-label="Посилання Twitter" target="_blank" rel="noopener noreferrere">
-                <svg class="socials-icon" width="20" height="20">
+            <li class="card-item socials__item">
+              <a class="socials__link" href="https://twitter.com/" aria-label="Посилання Twitter" target="_blank" rel="noopener noreferrere">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./image/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="card-item socials-item">
-              <a class="socials-link" href="https://www.facebook.com/" aria-label="Посилання Facebook" target="_blank" rel="noopener noreferrere">
-                <svg class="socials-icon" width="20" height="20">
+            <li class="card-item socials__item">
+              <a class="socials__link" href="https://www.facebook.com/" aria-label="Посилання Facebook" target="_blank" rel="noopener noreferrere">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./image/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="card-item socials-item">
-              <a class="socials-link" href="https://www.linkedin.com/" aria-label="Посилання Linkedin" target="_blank" rel="noopener noreferrere">
-                <svg class="socials-icon" width="20" height="20">
+            <li class="card-item socials__item">
+              <a class="socials__link" href="https://www.linkedin.com/" aria-label="Посилання Linkedin" target="_blank" rel="noopener noreferrere">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./image/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <strong class="socials-title">Підпишіться на розсилку</strong>
-          <form class="footer-send">
-            <label class="footer-label">
-              <input class="footer-input" type="email" placeholder="my@mail.ua" name="back-mail">
-              <span class="footer-label-txt">E-mail</span>
+        <div class="footer__form">
+          <strong class="footer__title">Підпишіться на розсилку</strong>
+          <form class="send-email">
+            <label class="send-email__label">
+              <input class="send-email__input" type="email" placeholder="my@mail.ua" name="back-mail">
+              <span class="send-email__txt">E-mail</span>
             </label>
-            <button class="hero-btn send-btn" type="submit">Підписатися
-              <svg class="send-icon" width="24" height="24">
+            <button class="btn" type="submit">Підписатися
+              <svg class="send-email__icon" width="24" height="24">
                 <use href="./image/icons.svg#send"></use>
               </svg>
             </button>

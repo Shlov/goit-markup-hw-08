@@ -1,0 +1,75 @@
+.send-email {
+    display: flex;
+
+    align-items: center;
+    gap: 12px;
+}
+
+
+.send-email__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
+
+.send-email__input {
+    
+    width: 358px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--contrast-text-color);
+    outline: none;
+    transition: opacity var(--animat), border-color var(--animat),;
+}
+
+.send-email__txt {
+    transition: color var(--animat); 
+}
+
+.send-email__input::placeholder {
+    opacity: 0;
+}
+
+.send-email__input:not(:placeholder-shown) + .send-email__txt {
+    opacity: 0;
+    /* color: red; */
+}   
+
+.send-email__input:focus::placeholder {
+    opacity: 1;
+}
+
+.send-email__input:focus,
+.send-email__input:hover {
+    border-color: var(--accent-color);
+
+}
+
+.send-email__label{
+    position: relative;
+
+
+}
+
+.send-email__input:focus + .send-email__txt {
+    opacity: 0;
+
+}
+
+.send-email__input:hover + .send-email__txt{
+    color: var(--accent-color);
+}
+
+.send-email__label:hover,
+.send-email__label:focus {
+
+}
+
+.send-email__txt {
+    position: absolute;
+    /* top: 50%; */
+    left: 16px;
+    transform: translate(0, 50%);
+
+}
