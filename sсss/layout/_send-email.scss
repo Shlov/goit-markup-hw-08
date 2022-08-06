@@ -1,15 +1,27 @@
 .send-email {
     display: flex;
-
     align-items: center;
     gap: 12px;
+
+    &__label{
+        position: relative;
+    }
+    
+    &__txt {
+        position: absolute;
+        left: 16px;
+        transform: translate(0, 50%);
+        transition: color var(--animat); 
+    }
+    
+    &__icon {
+        fill: currentColor;
+        margin-left: 10px;
+    }
+
 }
 
 
-.send-email__icon {
-    fill: currentColor;
-    margin-left: 10px;
-}
 
 .send-email__input {
     
@@ -21,55 +33,34 @@
     color: var(--contrast-text-color);
     outline: none;
     transition: opacity var(--animat), border-color var(--animat),;
-}
-
-.send-email__txt {
-    transition: color var(--animat); 
-}
-
-.send-email__input::placeholder {
-    opacity: 0;
-}
-
-.send-email__input:not(:placeholder-shown) + .send-email__txt {
-    opacity: 0;
-    /* color: red; */
-}   
-
-.send-email__input:focus::placeholder {
-    opacity: 1;
-}
-
-.send-email__input:focus,
-.send-email__input:hover {
-    border-color: var(--accent-color);
-
-}
-
-.send-email__label{
-    position: relative;
 
 
-}
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+    }
 
-.send-email__input:focus + .send-email__txt {
-    opacity: 0;
+    &::placeholder {
+        opacity: 0;
+    }
+
+    &:not(:placeholder-shown) + .send-email__txt {
+        opacity: 0;
+    }   
+
+    &:focus::placeholder {
+        opacity: 1;
+    }
+
+
+    &:focus + .send-email__txt {
+        opacity: 0;
+    }
+
+    &:hover + .send-email__txt{
+        color: var(--accent-color);
+    }
 
 }
 
-.send-email__input:hover + .send-email__txt{
-    color: var(--accent-color);
-}
 
-.send-email__label:hover,
-.send-email__label:focus {
-
-}
-
-.send-email__txt {
-    position: absolute;
-    /* top: 50%; */
-    left: 16px;
-    transform: translate(0, 50%);
-
-}

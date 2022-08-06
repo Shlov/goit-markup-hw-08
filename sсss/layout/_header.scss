@@ -3,27 +3,25 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+
+    &__logo {
+        margin-right: 93px;
+    }
+    
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__container {
+        border-bottom: 1px solid var(--contrast-text-color);
+    }
+    
+    &__connection-list {
+        margin-left: auto;
+    } 
+
 }
-
-.header__logo {
-    margin-right: 93px;
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-}
-
-.header__container {
-    border-bottom: 1px solid var(--contrast-text-color);
-}
-
-.header__connection-list {
-    margin-left: auto;
-}
-
-
-
 
 .site-nav__list,
 .connection-list{
@@ -35,28 +33,11 @@
     color: var(--title-text-color); 
 }
 
-
-
-
-
 .site-nav__link {    
     position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 31px;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus,
-.site-nav__link--operating,
-.connection-list__link:hover,
-.connection-list__link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav__link,
-.connection-list__link {
-    transition: color var(--animat);
 }
 
 .site-nav__link--operating::after {
@@ -87,3 +68,19 @@
 .connection-list__icon:focus {
     fill: var(--accent-color);
 }
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link--operating,
+.connection-list__link--accent:hover,
+.connection-list__link--accent:focus {
+    color: var(--accent-color);
+}
+
+.site-nav__link,
+.connection-list__link--accent {
+    transition: color var(--animat);
+}
+
+
+

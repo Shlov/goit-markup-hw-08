@@ -1,16 +1,16 @@
-.work.section {
+.work {
     padding-top: 0;
-    }
     
-    .work-list {
+    
+    &__list {
         --column-list: 3;
     }
     
-    .work-list__item {
+    &__item {
         position: relative;
     }
     
-    .work-list__title {
+    &__title {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -23,3 +23,4 @@
         padding: 27px;
     
     }
+}

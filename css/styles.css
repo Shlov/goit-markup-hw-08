@@ -328,11 +328,11 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Our work */
 
-/* .work.section {
+/* .work {
 padding-top: 0;
 }
 
-.work-list {
+.work__list {
     --column-list: 3;
 }
 

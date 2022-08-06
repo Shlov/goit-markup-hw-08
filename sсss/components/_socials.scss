@@ -16,14 +16,25 @@
     transition: color var(--animat), 
     background-color var(--animat);
 
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--contrast-text-color);    
+}
 }
 
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--accent-color);
+.socials__link--accent {   
     color: var(--contrast-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
     
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
+
+
+
 
 .socials__icon {
     display: block;
@@ -31,23 +42,15 @@
     height: 20px;
     object-position: 50% 50%;
     fill: currentColor;
-}
 
-.socials__icon:hover,
-.socials__icon:focus {
+    &:hover,
+    &:focus {
     fill: var(--contrast-text-color);
 }
-
-
-.footer .socials__link {
-   
-    color: var(--contrast-text-color);
-    background-color: rgba(255, 255, 255, 0.1);
-
 }
 
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--accent-color);
 
-}
+
+
+
+

@@ -4,11 +4,14 @@
     line-height: calc(16 / 14);
     text-transform: uppercase;
 
-}
-.card-title--gray {
-    color: var(--title-text-color);
+    &--gray {
+        color: var(--title-text-color);
+    }
+    
+    &--white {
+        color: var(--contrast-text-color);
+    }
+
 }
 
-.card-title--white {
-    color: var(--contrast-text-color);
-}
+
