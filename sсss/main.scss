@@ -17,15 +17,17 @@
 @import './components/card-title';
 @import './components/socials';
 @import './components/logo';
+@import './components/send-email';
+@import './components/modal';
+@import './components/menu';
 
 // Layout
 @import './layout/header';
+
 @import './layout/hero';
 @import './layout/advantage';
 @import './layout/our-work';
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
-@import './layout/send-email';
-@import './layout/modal';
 @import './layout/portfolio';
