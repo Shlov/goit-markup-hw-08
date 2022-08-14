@@ -1,5 +1,15 @@
 .clients {
 
+    & .card-item {
+        @media screen and (max-width: 768px) {    
+            --column-list: 2;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {    
+            --column-list: 3;
+        }
+    }
+
     &__list {
         --column-list: 6;
     }

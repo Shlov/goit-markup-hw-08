@@ -1,5 +1,16 @@
 .team {
     background-color: var(--section-background);
+    
+    & .card-item {
+        @media screen and (max-width: 768px) {    
+            --column-list: 1;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {    
+            --column-list: 2;
+        }
+    }
+
 }
 
 .card-team {

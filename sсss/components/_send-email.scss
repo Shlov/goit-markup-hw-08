@@ -3,6 +3,11 @@
     align-items: center;
     gap: 12px;
 
+    @media screen and (max-width:1199px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     &__label{
         position: relative;
     }

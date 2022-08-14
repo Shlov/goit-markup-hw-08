@@ -6,15 +6,24 @@
 
     &__logo {
         margin-right: 93px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 87px;
+        }
     }
     
     &__container {
         display: flex;
         align-items: center;
+        position: relative;
     }
     
     &__container {
         border-bottom: 1px solid var(--contrast-text-color);
+    
+        @media screen and (max-width: 767px) {
+            height: 60px;
+        }
+    
     }
     
     &__connection-list {
@@ -26,7 +35,20 @@
 .site-nav__list,
 .connection-list{
     display: flex;
-    gap: 50px;    
+    gap: 50px; 
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .connection-list {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
 }
 
 .site-nav__list {
@@ -53,11 +75,17 @@
 }
 
 .connection-list__link {
-    padding-top: 32px;
-    padding-bottom: 31px;
+    
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 31px;
+
+    }
+
 }
 
 .connection-list__icon {
