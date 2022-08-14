@@ -299,10 +299,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-* {
-  outline: 1px solid teal;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -930,7 +926,6 @@ h1, h2, h3, h4, h5, h6, p {
   right: 15px;
   border: none;
   padding: 0;
-  outline: 2px solid red;
   background-color: inherit;
 }
 .header-menu__btn-close:hover .header-menu__btn-icon, .header-menu__btn-open:hover .header-menu__btn-icon {
