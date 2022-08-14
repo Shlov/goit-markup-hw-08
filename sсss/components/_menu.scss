@@ -3,6 +3,9 @@
     top:0;
     left:0;
     z-index: 100;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none; 
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -10,6 +13,13 @@
     width: 100%;
     background-color: var(--main-background);
     padding: 48px 40px;
+
+    &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    
+    }
 
     &__wrap-nav {
         margin-bottom: auto;
@@ -28,7 +38,17 @@
         color: var(--title-text-color);
      }
 
+    &__nav-link--operating {
+        color: var(--accent-color);
+     }
 
+    &__connection-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    
     &__connection-tel {
         color: var(--accent-color);
         font-weight: 500;
@@ -74,8 +94,7 @@
     &__socials-list:not(:last-child) &__socials-link::after {
         
        margin-left: 10px;
-        // position: absolute;
-        outline: 1px solid red;
+        // outline: 1px solid red;
         
         content: '';
         display: block;
@@ -85,11 +104,45 @@
     }
 
 
+    &__btn-close, &__btn-open {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        border: none;
+        padding: 0;
+        outline: 2px solid red;
+        background-color: inherit;
 
+        &:hover .header-menu__btn-icon {
+            fill: var(--accent-color);
+        }
+
+        &__btn-close {
+            
+            
+    
+            &:hover .header-menu__btn-icon {
+                fill: var(--accent-color);
+            }
+        }
+
+    }
+
+    &__btn-open {
+
+
+    }
+
+    &__btn-icon {
+        display: block;
+
+    }
     
     
 
 }
+
+
 
 
 
