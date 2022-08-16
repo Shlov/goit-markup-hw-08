@@ -25,11 +25,15 @@
         align-items: center;
         justify-content: center;
         color: var(--clients-icon-cl);
-        padding: 16px;
+        padding: 16px 0;
         border: 1px solid currentColor;
         border-radius: 4px;
         max-height: 92px;
         transition: color var(--animat);
+
+        @media screen and (min-width: 480px) {
+            padding: 16px;
+        }
     
     }
     

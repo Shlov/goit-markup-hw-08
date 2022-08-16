@@ -10,6 +10,7 @@
 
     &__label{
         position: relative;
+        width: 100%;
     }
     
     &__txt {
@@ -29,8 +30,8 @@
 
 
 .send-email__input {
-    
-    width: 358px;
+    width: 100%;
+    max-width: 450px;
     padding: 15px 16px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,6 +39,14 @@
     color: var(--contrast-text-color);
     outline: none;
     transition: opacity var(--animat), border-color var(--animat),;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 
 
     &:focus,

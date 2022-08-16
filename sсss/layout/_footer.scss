@@ -28,10 +28,12 @@
 
 
     &__wrap-contact, &__social, &__form {
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:1199px) {
             text-align: center;
         }   
         }
+
+        
         
     
     &__contact {

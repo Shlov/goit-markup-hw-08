@@ -47,7 +47,10 @@
 .portfolio .button-list {
     --gap-list: 8px;
     margin-bottom: 50px;
-    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 
 }
 
@@ -58,20 +61,21 @@
 }
 
 .portfolio-list {
-    --column-list: 3;
-    
-    @media screen and (max-width: 768px) {    
-        --column-list: 1;
-    }
-
+       
     @media screen and (min-width: 768px) and (max-width: 1200px) {    
         --column-list: 2;
+    }
+
+    @media screen and (min-width: 1200px) {    
+        --column-list: 3;
     }
 
 }
 
 .portfolio-lnk {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--animat);
 }
 
@@ -92,7 +96,7 @@
     position: absolute;
     top:0;
     left:0;
-
+    opacity: 0;
     display: flex;
     align-items: center;
     padding: 24px;
@@ -106,11 +110,17 @@
     color: var(--contrast-text-color);
 
     transform: translateY(100%);
-    transition: transform var(--animat);
+    transition: transform var(--animat), opacity 150ms ease ;
 }
 
 .portfolio-lnk:hover .portfolio-item-bg,
 .portfolio-lnk:focus .portfolio-item-bg {
 
     transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-item-txt {
+    height: 100%;
+    overflow: auto;
 }

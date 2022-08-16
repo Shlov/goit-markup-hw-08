@@ -1,19 +1,20 @@
 .advantage {
 
     & .card-item {
-        @media screen and (max-width: 768px) {    
-            --column-list: 1;
-        }
+        // @media screen and (max-width: 768px) {    
+        //     --column-list: 1;
+        // }
 
         @media screen and (min-width: 768px) and (max-width: 1200px) {    
             --column-list: 2;
         }
+
+        @media screen and (min-width: 1200px) {    
+            --column-list: 4;
+        }
     }
     &__card {
-        @media screen and (max-width: 768px) {
-            text-align: center;
-            
-        }
+       
     }
 
     &__wrap {
@@ -29,6 +30,10 @@
 
     &__title {
         margin-bottom: 10px;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            
+        }
     }
 
 }
