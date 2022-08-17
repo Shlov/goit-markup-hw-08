@@ -34,7 +34,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 100%;
+    
     overflow: auto;
     /* min-height: 581px; */
     padding: 40px;
@@ -45,6 +45,13 @@
     border-radius: 4px;
     transition: transform var(--animat);
     transform-origin: bottom center;
+
+    @media screen and (max-height: 581px) {
+        height: 100%;
+        
+    }
+
+    
     
 }
 
