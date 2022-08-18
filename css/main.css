@@ -650,6 +650,12 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
 @media screen and (max-height: 581px) {
   .modal {
     height: 100%;
@@ -778,6 +784,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 8px;
   -webkit-transition: opacity var(--animat), fill var(--animat);
   transition: opacity var(--animat), fill var(--animat);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .politics-form-check {
@@ -815,6 +823,13 @@ h1, h2, h3, h4, h5, h6, p {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 767px) {
+  .politics-form-txt {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .politics-link {
@@ -1547,6 +1562,18 @@ h1, h2, h3, h4, h5, h6, p {
   transition: opacity 150ms ease, -webkit-transform var(--animat);
   transition: transform var(--animat), opacity 150ms ease;
   transition: transform var(--animat), opacity 150ms ease, -webkit-transform var(--animat);
+}
+@media screen and (min-width: 470px) {
+  .portfolio-item-bg {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item-bg {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 
 .portfolio-lnk:hover .portfolio-item-bg,

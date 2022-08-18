@@ -46,6 +46,13 @@
     transition: transform var(--animat);
     transform-origin: bottom center;
 
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        max-width: 450px;
+        
+    }
+
+
     @media screen and (max-height: 581px) {
         height: 100%;
         
@@ -167,7 +174,7 @@
 .icon-check-form {
     margin-right: 8px;
     transition: opacity var(--animat), fill var(--animat);
-    
+    flex-shrink: 0;
 
 }
 
@@ -203,6 +210,15 @@
 
 .politics-form-txt {
     user-select: none;
+
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.03em;
+        
+    }
+
 }
 
 .politics-link {
