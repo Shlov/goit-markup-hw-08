@@ -5,7 +5,7 @@
         //     --column-list: 1;
         // }
 
-        @media screen and (min-width: 768px) and (max-width: 1200px) {    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {    
             --column-list: 2;
         }
 
@@ -30,7 +30,7 @@
 
     &__title {
         margin-bottom: 10px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             text-align: center;
             
         }

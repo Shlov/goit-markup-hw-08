@@ -58,11 +58,12 @@
     padding: 20px 24px;
     border: 1px solid var(--border-white-cl);
     border-top: none;
+    flex-grow: 1;
 }
 
 .portfolio-list {
        
-    @media screen and (min-width: 768px) and (max-width: 1200px) {    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {    
         --column-list: 2;
     }
 
